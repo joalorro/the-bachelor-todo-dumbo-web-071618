@@ -29,7 +29,7 @@ def get_contestant_name(data, occupation)
     contestant_array.each do |contestant|
       
       contestant.each do |category, info|
-       
+        if category == "occupation"
       end
     end
   end
