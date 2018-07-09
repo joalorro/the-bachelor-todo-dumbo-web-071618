@@ -1,6 +1,6 @@
 def get_first_name_of_season_winner(data, season)
   
-  data.each do ||
+  data[0].each 
   
 end
 
