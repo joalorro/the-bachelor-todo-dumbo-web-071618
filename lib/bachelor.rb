@@ -11,7 +11,6 @@ def get_first_name_of_season_winner(data, season)
         contestant.each do |category, info|
           if category == "name"
             name = info.split(' ') 
-            
           end
           if category == "status" && info.downcase == "winner"
             return name[0]
