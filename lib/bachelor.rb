@@ -26,9 +26,7 @@ def get_contestant_name(data, occupation)
   name = ""
   
   data.each do |season_number, contestant_array|
-    
     contestant_array.each do |contestant|
-      
       contestant.each do |category, info|
         name = info if category == "name"
         return name if info == occupation
