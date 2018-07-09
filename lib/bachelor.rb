@@ -59,7 +59,7 @@ def get_occupation(data, hometown)
       
       contestant.each do |category, info|
         occupation = info if category == "occupation"
-        return occupation if info == hometown
+        return occupation if category == "" info == hometown
       end
     end
 end
