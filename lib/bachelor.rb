@@ -1,10 +1,14 @@
+require 'pry'
+
 def get_first_name_of_season_winner(data, season)
   
   data.each do |season_number, contestant_array|
+    binding.pry
     contestant_array.each do |contestant|
-      
+      binding.pry 
       contestant.each do |category, info|
-      
+        binding.pry 
+      end
     end
   end
   
