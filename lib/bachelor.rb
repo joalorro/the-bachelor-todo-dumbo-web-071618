@@ -14,6 +14,9 @@ def get_first_name_of_season_winner(data, season)
             name = info.split(' ') 
             binding.pry
           end
+          if category == "status" && info == ""
+            
+          end
         end
       end
     end
