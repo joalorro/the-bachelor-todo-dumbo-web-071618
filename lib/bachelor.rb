@@ -64,7 +64,7 @@ end
 
 def get_average_age_for_season(data, season)
   sum = 0.0
-  counter = 0 
+  counter = 0.0
   
   data.each do |season_number, contestant_array|
     if season_number == season 
@@ -73,10 +73,10 @@ def get_average_age_for_season(data, season)
         contestant.each do |category, info|
         
           sum += info.to_f if category == "age"
-          counter += 1 
+          counter += 1.0
         end
       end
     end
   end
-  avg = (sum / counter.to_f).to_i
+  avg = (sum / counter).to_i
 end
