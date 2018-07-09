@@ -2,12 +2,14 @@ require 'pry'
 
 def get_first_name_of_season_winner(data, season)
   
+  bool = false 
+  
   data.each do |season_number, contestant_array|
     if season == season_number 
       contestant_array.each do |contestant|
         
         contestant.each do |category, info|
-          if category == 
+          if category == "name"
         end
       end
     end
